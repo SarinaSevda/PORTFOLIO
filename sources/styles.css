@@ -42,25 +42,6 @@ p {
   margin: 20px;
 }
 
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
@@ -85,4 +66,59 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+@media (max-width: 767px) {
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .primary-link {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+  }
+  .order-sm-last {
+    order: 2;
+  }
+  .order-sm-first {
+    order: 1;
+  }
+  .col-sm-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mobile-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .reverse-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .reverse-order .text-content {
+    order: 2;
+  }
+  .reverse-order .image-content {
+    order: 1;
+  }
 }
